@@ -12,13 +12,13 @@ const Navbar = () => {
         return () => (window.onscroll = null);
     }
     return (
-        <div className="navbar">
+        <div className={isScrolled ? "navbar scrolled" : "navbar"}>
             <div className="container">
                 <div className="left">
                     <img src={netflix_logo} alt="" />
                     <Link to="/">HomePgae</Link>
-                    <Link to="/">Series</Link>
-                    <Link to="/">Mo0vies</Link>
+                    <Link to="/series">Series</Link>
+                    <Link to="/movies">Movies</Link>
                     <Link to="/">New and Popular</Link>
                     <Link to="/">My List</Link>
                 </div>
